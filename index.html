@@ -1,20 +1,23 @@
 
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
+<head>
+    <meta charset="UTF-8">
     <meta name="referrer" content="no-referrer-when-downgrade">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-
-    <title>Търсите ли загорели жени в близост до вас?</title>
-    <link rel="icon" href="/favicon.ico">
-    <link rel="stylesheet" href="css/style-min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <!-- google register meta tag -->
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id"
+        content="411248514213-cnhlt7g2se8qn84a9c0c8vmdqaujcq0g.apps.googleusercontent.com">
+    <title>Document</title>
+    <link rel="icon" href="https://meet-online.netlify.app/bg3/m8v6/img/favicon.ico">
+    <link rel="stylesheet" href="https://team-cdn.s3.eu-central-1.amazonaws.com/css/style-min.css">
+    <link rel="stylesheet" href="https://meet-online.netlify.app/bg3/m8v6/css/custom.css">
     <!-- google register script -->
-   
-   
-    <script src="/js/head.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://team-cdn.s3.eu-central-1.amazonaws.com/js/head.js"></script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215523202-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -24,92 +27,19 @@
   gtag('config', 'UA-215523202-2');
 </script>
 
-   
 </head>
 
 <body>
 
-    <div id="regQuiz">
-    <div id="quizBox" style="">
+    <div id="regQuiz"></div>
 
-        <h2 id="regTitle" style="display: none;">Търсите ли загорели жени в близост до вас?</h2>
+    <script src="https://meet-online.netlify.app/bg3/m8v6/config.js"></script>
+    <script src="https://team-cdn.s3.eu-central-1.amazonaws.com/js/jquery-min.js"></script>
+    <script src="https://team-cdn.s3.eu-central-1.amazonaws.com/js/plugins-min.js"></script>
+    <script src="https://team-cdn.s3.eu-central-1.amazonaws.com/js/content-min.js"></script>
+    <script src="https://team-cdn.s3.eu-central-1.amazonaws.com/js/data-min.js"></script>
+    <script src="https://meet-online.netlify.app/bg3/m8v6/js/custom.js"></script>
+</body>
 
-        <div class="wrap">
+</html>
 
-            
-            <div id="qStart" class="steps animated zoomIn smsClub" style="">
-                <div class="questionHolder">
-                    <h1>Внимание!</h1>
-                    <h3>Ще видиш снимки на жени, които може би познаваш. Моля, бъди дискретен.</h3>
-                </div>
-            </div>
-            <div id="qFewQuestions" class="steps animated zoomIn smsClub" style="display: none;">
-                <div class="questionHolder">
-                    <h2>Важно!</h2>
-                    <h3>Преди да ви покажем снимки на жени, които живеят в квартала ви, ние трябва да ви зададем няколко въпроса.</h3>
-                </div>
-            </div>
-            <div id="qIdentity" class="steps animated zoomIn smsClub" style="display: none;">
-                <div class="questionHolder">
-                    <h2>Въпрос 1</h2>
-                    <h3>Много от тези жени са отчаяни самотни майки и омъжени жени, търсещи ново запознанство. Възможно е да познаваш някоя от тях или дори да са ти съседки. Ще запазиш ли идентитета на тези жени за себе си?</h3>
-                </div>
-            </div>
-            <div id="qQuickSex" class="steps animated zoomIn smsClub" style="display: none;">
-                <div class="questionHolder">
-                    <h2>Въпрос 2</h2>
-                    <h3>Тези жени ни помолиха да блокираме мъжете, търсещи "връзка". Те просто искат нов познат. Съгласни ли сте с това изискване?</h3>
-                </div>
-            </div>
-            <div id="toReg1" class="steps animated zoomIn" style="display: none;">
-                <div class="questionHolder">
-                    <h1>Благодарим ви.</h1>
-                    <img src="/images/thanks.png">
-                    <h3>Сега можете да видите списъка и снимките на жените в близост до вас, че ние открихме, на базата на вашите отговори.</h3>
-                    <h3>Кликни на бутона долу, за да приключиш с регистрацията.</h3>
-                </div>
-                <div class="btnHolder">
-                    <button id="toReg1Btn">Продължи 〉</button>
-                </div>
-            </div>
-
-            <div id="stepDots"><div class="dots activeDot"></div><div class="dots"></div><div class="dots"></div><div class="dots"></div></div>
-            <div id="stepBtns" class="btnHolder">
-                <button id="stepBack" style="display: none;">Назад</button>
-                <button id="nextStep">Продължи</button>
-            </div>
-
-        </div>
-    </div>
-</div>
-
-    <script src="/js/config.js"></script>
-    <script src="/js/jquery-min.js"></script>
-    <script src="/js/plugins-min.js"></script>
-    <script src="/js/content-min.js"></script>
-    
-    <div id="progressBar" style="display: none; bottom: 20px;">
-        <div id="progress" style="width: 0%; transition: all 0.5s ease 0s;">
-            <p id="percentage" style="background: transparent;">0%</p>
-        </div>
-    </div>
-
-    
-    <div id="supportBar">
-        <p>
-            <small id="termsLink2" data-link="#termsOfUse">Условия за ползване</small>
-            <small id="privacyLink2" data-link="#privacy">Декларация за поверителност</small>
-            <small id="supportLink" data-link="#customer">Обслужване на клиенти</small> 
-        </p>
-    </div>
-
-
-    <div id="loader">
-        <div id="spinner"></div>
-    </div>
-
-    <script src="/js/data-min.js"></script>
-   
-
-
-</body></html>
