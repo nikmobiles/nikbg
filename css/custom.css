@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-color: #eaeaea;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: url("/images/21046114.gif");
+}
+
+#regQuiz {
+  border: 3px solid yellow;
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 95%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2rem 0 0 -4px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: left;
+}
+
+#quizBox {
+  width: 100%;
+}
+
+#stepBtns button, #toReg1Btn {
+  display: inline-block;
+  box-shadow: 0 0 20px #fbff00;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #fff;
+  width: 45%;
+  margin: 0 1%;
+  border-radius: 3px;
+  border: 2px solid #fff;
+}
+
+#stepBack {
+  background: #a492b4;
+}
+
+#nextStep {
+  background: #209590;
+}
+
+#quizBox .activefemale {
+  background: #a492b4;
+  border-radius: 10px;
+}
+
+#quizBox .activemale {
+  background: #209590;
+  border-radius: 10px;
+}
+
+#nextStep:hover {
+  background: #209590;
+}
+
+#quizBox .activefemale:hover, #stepBack:hover {
+  background: #a492b4;
+}
+
+#qGender .radio {
+  border-radius: 10px;
+}
+
+.checked::before {
+  content: "✓";
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+  border-radius: 50%;
+  padding: 1px 4px;
+}
+
+.radio {
+  background-color: transparent;
+  border: 1px solid yellow;
+}
+
+.radio:hover {
+  background: #1abc9c;
+}
+
+.steps input[type="email"], .steps input[type="number"], .steps input[type="password"], .steps input[type="text"], .steps select, textarea#about, option {
+  color: #000;
+  border-radius: 3px;
+}
+
+#regTitle {
+  color: #e09df5;
+}
+
+#supportModal {
+  text-align: left;
+}
+
+.privacy_container_content, .terms_container_content {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  #usersOnline {
+    font-size: 18px;
+  }
+  #regQuiz {
+    height: 85vh;
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  #regTitle, #acceptTerms, #qGender .questionText {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 479px) {
+  #supportBar {
+    height: auto;
+    padding: 5px 10px;
+  }
+  #progressBar {
+    bottom: 50px !important;
+  }
+}
