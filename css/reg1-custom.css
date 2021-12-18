@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: 0;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.3;
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-color: #eaeaea;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 100%;
+  position: fixed;
+}
+
+body {
+  background-image: url("/images/21046114.gif");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none;
+}
+
+#regQuiz {
+  border: 3px solid yellow;
+  box-sizing: border-box;
+  max-width: 400px;
+  width: 95%;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 2rem 0 0 -4px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  text-align: left;
+  height: 94vh;
+  overflow-y: auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#quizBox {
+  width: 100%;
+}
+
+#regBtn {
+  display: inline-block;
+  box-shadow: 0 0 20px #fbff00;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: bold;
+  color: #fff;
+  width: 85%;
+  margin: 25px auto;
+  border-radius: 3px;
+  border: 2px solid #fff;
+  background: #209590;
+}
+
+#acceptTerms, #womanWaiting .lastStep2list, #usersOnline, .questionText, .orRegister, #tosText {
+  color: #fff;
+}
+
+.steps input[type="email"] {
+  margin: 10px auto;
+}
+
+.orRegister {
+  font-size: 13px;
+}
+
+#usersOnline {
+  font-size: 21px;
+  color: #e09df5;
+}
+
+#googleCustomBtn {
+  margin: 10px auto;
+  max-width: 300px;
+  width: 100%;
+  color: #000;
+  font-size: 12px;
+}
+
+.privacy_container_content, .terms_container_content {
+  text-align: left;
+}
+
+#supportBar p {
+  font-size: 13px;
+}
+
+#spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  #usersOnline {
+    font-size: 18px;
+  }
+  #acceptTerms {
+    font-size: 16px;
+  }
+  #womanWaiting .lastStep2list, #usersOnline, .questionText, .orRegister {
+    font-size: 15px;
+  }
+  #regBtn {
+    font-size: 16px;
+  }
+  #tosText {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 599px) {
+  #womanWaiting {
+    text-align: center;
+  }
+  body {
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 479px) {
+  #supportBar {
+    height: auto;
+    padding: 5px 10px;
+  }
+  #progressBar {
+    bottom: 50px !important;
+  }
+  #regQuiz {
+    height: 90vh;
+    margin: 0 auto 50px;
+  }
+  .checkbox {
+    left: -2px;
+    top: 1px;
+    width: 15px;
+    height: 15px;
+  }
+}
