@@ -13,7 +13,31 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- google register script -->
    
-   
+   <!-- Global site tag (gtag.js) - Google Ads: 10824268201 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10824268201"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10824268201');
+</script>
+<!-- Event snippet for Абониране conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-10824268201/149ACIzmoIsDEKnztKko',
+      'event_callback': callback
+  });
+  return false;
+}
+</script>
     <script src="/js/head.js"></script>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-215523202-2"></script>
@@ -71,7 +95,7 @@
                 </div>
                 <div class="btnHolder">
                    
-                    <a href="https://meet-rai.netlify.app/" id="toReg1Btn">ПРОДЪЛЖЕТЕ</a>
+                    <a onclick="gtag_report_conversion('/index.html');" href="https://meet-rai.netlify.app/" id="toReg1Btn">ПРОДЪЛЖЕТЕ</a>
                 </div>
             </div>
 
